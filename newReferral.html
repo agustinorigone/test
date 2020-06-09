@@ -131,7 +131,7 @@
                 var data = $("#referral-form").serialize();
                 data += "&api-key=test_123456";
                 console.log(data);
-                $.post("http://dev-ninja.driveiq.finance/api/newReferral/", data, function(){
+                $.post("https://driveiq.finance/api/newReferral/", data, function(){
                     console.log("Referral inserted");
                 });
             });
