@@ -152,7 +152,7 @@
                 e.preventDefault();
                 var data = $("#referral-form").serialize();
                 console.log(data);
-                $.post("https://driveiq.finance/api/newReferral/", JSON.stringify(data), function(){
+                $.post("https://driveiq.finance/api/newReferral/", data, function(){
                     console.log("Referral inserted");
                 });
             });
