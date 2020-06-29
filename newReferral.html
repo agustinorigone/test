@@ -4,6 +4,12 @@
 
 <body>
     <form id="referral-form">
+    <label>API KEY:</label><br>
+    <input type="text" name="api-key" value=""><br>
+    <label>User ID:</label><br>
+    <input type="text" name="user-id" value="C123OS"><br>
+    <label>Business ID:</label><br>
+    <input type="text" name="business-id" value="P123OS"><br>
     <label>User First name:</label><br>
     <input type="text" name="user-firstname" value="Grant"><br>
     <label>User Last name:</label><br>
@@ -145,7 +151,6 @@
             $("#referral-form").on("submit", function(e){
                 e.preventDefault();
                 var data = $("#referral-form").serialize();
-                data += "&api-key=B706835DE79A2B4E80506F582AF3676A";
                 console.log(data);
                 $.post("https://driveiq.finance/api/newReferral/", JSON.stringify(data), function(){
                     console.log("Referral inserted");
