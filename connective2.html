@@ -8,97 +8,144 @@
 
 <body>
     <h1>Mercury Mock</h1>
-    <form id="referral-form" class="form-inline">
-        <div class="form-group mb-2">
-    	    <label>API KEY:</label>
-            <input class="form-control" type="text" name="api-key" value="">
-        </div>
+    <div class="container">
+        <form id="referral-form">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group mb-2">
+                        <label>API KEY:</label>
+                        <input class="form-control" type="text" name="api-key" value="">
+                    </div>
 
-        <div class="form-group mb-2">
-            <label>User ID:</label>
-    	    <input class="form-control" type="text" name="user-id" value="C123OS">
-        </div>
+                    <div class="form-group mb-2">
+                        <label>User ID:</label>
+                        <input class="form-control" type="text" name="user-id" value="C123OS">
+                    </div>
 
-        <div class="form-group mb-2">
-            <label>Business ID:</label>
-            <input class="form-control" type="text" name="business-id" value="P123OS">
-        </div>
+                    <div class="form-group mb-2">
+                        <label>Business ID:</label>
+                        <input class="form-control" type="text" name="business-id" value="P123OS">
+                    </div>
 
-        <div class="form-group mb-2">
-            <label>User First name:</label>
-            <input class="form-control" type="text" name="user-firstname" value="Grant">
-        </div>
+                    <div class="form-group mb-2">
+                        <label>User First name:</label>
+                        <input class="form-control" type="text" name="user-firstname" value="Grant">
+                    </div>
 
-        <div class="form-group mb-2">
-            <label>User Last name:</label>
-            <input class="form-control" type="text" name="user-lastname" value="Clayton">
-        </div>
+                    <div class="form-group mb-2">
+                        <label>User Last name:</label>
+                        <input class="form-control" type="text" name="user-lastname" value="Clayton">
+                    </div>
 
-        <div class="form-group mb-2">
-            <label>User Phone:</label>
-            <input class="form-control" type="text" name="user-phone" value="0406789887">
-        </div>
+                    <div class="form-group mb-2">
+                        <label>User Phone:</label>
+                        <input class="form-control" type="text" name="user-phone" value="0406789887">
+                    </div>
 
-        <label>User Email:</label>
-        <input type="text" name="user-email" value="a1@a2.com">
-        <label>User Business Name:</label>
-        <input type="text" name="user-business-name" value="TEST Business Name">
-        <label>First name:</label>
-        <input type="text" name="firstname" value="Agustin"><br>
-    
-        <label>Last name:</label>
-        <input type="text" name="lastname" value="Origone">
-        <label>Email:</label>
-        <input type="text" name="email" value="agustin@driveon.finance">
-        <label>Phone:</label>
-        <input type="text" name="phone" value="0405335883"><br>
-
-        <label>State:</label>
-        <input type="text" name="state" value="1">
-        <label>Contact Method:</label>
-        <input type="text" name="contact-method" value="1">
-        <!-- values: 0 or 1 -->
-        <label>Loan Usage (Personal/Business):</label>
-        <input type="text" name="loan-usage" value="1">
-
-        <!-- values: 1 or 2 -->
-        <label>Amount to borrow:</label>
-        <input type="text" name="amount-to-borrow" value="10000">
-        <label>Loan Term:</label>
-        <input type="text" name="loan-term" value="5">
-        <label>Does Client Own Property:</label>
-        <input type="text" name="client-owns-property" value="1"><br>
-
-        <label>Credit History:</label>
-        <input type="text" name="credit-history" value="1">
-        <label>What Stage is the client at?:</label>
-        <input type="text" name="client-stage" value="1">
-        <label>Type of Loan / Asset:</label>
-        <input type="text" name="asset-type" value="20"><br>
-
-        <label>Would you like AMFIN to source the asset?</label>
-        <input type="text" name="sourced-by-amfin" value="1">
-        <label>Asset Source</label>
-        <input type="text" name="asset-source" value="1">
-        <label>Asset Year</label>
-        <input type="text" name="asset-year" value="2020"><br>
-
-        <label>Asset Make</label>
-        <input type="text" name="asset-make" value="Toyota">
-        <label>Asset Model</label>
-        <input type="text" name="asset-model" value="Corolla">
-        <label>Asset Variant</label>
-        <input type="text" name="asset-variant" value="Ascent Sport"><br>
-
-        <label>Asset detail/option</label>
-        <input type="text" name="asset-option" value="Test options/details">
-        <label>What do you want to earn from this deal?</label>
-        <input type="text" name="desired-earning" value="100">
-        <label>Partner Customer #</label>
-        <input type="text" name="partner-customer-number" value="AS101F">
-        <label>Campaign Code</label>
-        <input type="text" name="campaign-code" value="1001">
-    
+                    <div class="form-group mb-2">
+                        <label>User Email:</label>
+                        <input class="form-control" type="text" name="user-email" value="a1@a2.com"> 
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>User Business Name:</label>
+                        <input class="form-control" name="user-business-name" value="TEST Business Name">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>First name:</label>
+                        <input class="form-control" name="firstname" value="Agustin"><br>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Last name:</label>
+                        <input class="form-control" name="lastname" value="Origone">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Email:</label>
+                        <input class="form-control" name="email" value="agustin@driveon.finance">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Phone:</label>
+                        <input type="text" name="phone" value="0405335883"><br>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>State:</label>
+                        <input type="text" name="state" value="1">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Contact Method:</label>
+                        <input type="text" name="contact-method" value="1">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Loan Usage (Personal/Business):</label>
+                        <input type="text" name="loan-usage" value="1">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group mb-2">
+                        <label>Amount to borrow:</label>
+                        <input type="text" name="amount-to-borrow" value="10000">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Loan Term:</label>
+                        <input type="text" name="loan-term" value="5">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Does Client Own Property:</label>
+                        <input type="text" name="client-owns-property" value="1"><br>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Credit History:</label>
+                        <input type="text" name="credit-history" value="1">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>What Stage is the client at?:</label>
+                        <input type="text" name="client-stage" value="1">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Type of Loan / Asset:</label>
+                    <input type="text" name="asset-type" value="20">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Would you like AMFIN to source the asset?</label>
+                        <input type="text" name="sourced-by-amfin" value="1">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Asset Source</label>
+                        <input type="text" name="asset-source" value="1">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Asset Year</label>
+                        <input type="text" name="asset-year" value="2020">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Asset Make</label>
+                        <input type="text" name="asset-make" value="Toyota">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Asset Model</label>
+                        <input type="text" name="asset-model" value="Corolla">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Asset Variant</label>
+                        <input type="text" name="asset-variant" value="Ascent Sport">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Asset detail/option</label>
+                        <input type="text" name="asset-option" value="Test options/details">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>What do you want to earn from this deal?</label>
+                        <input type="text" name="desired-earning" value="100">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Partner Customer #</label>
+                        <input type="text" name="partner-customer-number" value="AS101F">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Campaign Code</label>
+                        <input type="text" name="campaign-code" value="1001">
+                    </div>
+                </div>
+            </div>
 
     <!-- PERSONAL -->
     <hr>
