@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC
+<html>
+<head>
+	<title>Form Iframe Demo</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Mercury Mock</h1>
+    <form id="referral-form">
+    <label>API KEY:</label>
+    <input type="text" name="api-key" value="">
+    <label>User ID:</label><br>
+    <input type="text" name="user-id" value="C123OS"><br>
+    <label>Business ID:</label><br>
+    <input type="text" name="business-id" value="P123OS"><br>
+    <label>User First name:</label><br>
+    <input type="text" name="user-firstname" value="Grant"><br>
+    <label>User Last name:</label><br>
+    <input type="text" name="user-lastname" value="Clayton"><br>
+    <label>User Phone:</label><br>
+    <input type="text" name="user-phone" value="0406789887"><br>
+    <label>User Email:</label><br>
+    <input type="text" name="user-email" value="a1@a2.com"><br>
+    <label>User Business Name:</label><br>
+    <input type="text" name="user-business-name" value="TEST Business Name"><br>
+    <label>First name:</label><br>
+    <input type="text" name="firstname" value="Agustin"><br>
+    <label>Last name:</label><br>
+    <input type="text" name="lastname" value="Origone"><br>
+    <label>Email:</label><br>
+    <input type="text" name="email" value="agustin@driveon.finance"><br>
+    <label>Phone:</label><br>
+    <input type="text" name="phone" value="0405335883"><br>
+    <label>State:</label><br>
+    <input type="text" name="state" value="1"><br>
+    <label>Contact Method:</label><br>
+    <input type="text" name="contact-method" value="1"><br>
+    <!-- values: 0 or 1 -->
+    <label>Loan Usage (Personal/Business):</label><br>
+    <input type="text" name="loan-usage" value="1"><br>
+    <!-- values: 1 or 2 -->
+
+    <label>Amount to borrow:</label><br>
+    <input type="text" name="amount-to-borrow" value="10000"><br>
+
+    <label>Loan Term:</label><br>
+    <input type="text" name="loan-term" value="5"><br>
+
+    <label>Does Client Own Property:</label><br>
+    <input type="text" name="client-owns-property" value="1"><br>
+
+    <label>Credit History:</label><br>
+    <input type="text" name="credit-history" value="1"><br>
+
+    <label>What Stage is the client at?:</label><br>
+    <input type="text" name="client-stage" value="1"><br>
+
+    <label>Type of Loan / Asset:</label><br>
+    <input type="text" name="asset-type" value="20"><br>
+
+    <label>Would you like AMFIN to source the asset?</label><br>
+    <input type="text" name="sourced-by-amfin" value="1"><br>
+
+    <label>Asset Source</label><br>
+    <input type="text" name="asset-source" value="1"><br>
+
+    <label>Asset Year</label><br>
+    <input type="text" name="asset-year" value="2020"><br>
+
+    <label>Asset Make</label><br>
+    <input type="text" name="asset-make" value="Toyota"><br>
+
+    <label>Asset Model</label><br>
+    <input type="text" name="asset-model" value="Corolla"><br>
+
+    <label>Asset Variant</label><br>
+    <input type="text" name="asset-variant" value="Ascent Sport"><br>
+
+    <label>Asset detail/option</label><br>
+    <input type="text" name="asset-option" value="Test options/details"><br>
+
+    <label>What do you want to earn from this deal?</label><br>
+    <input type="text" name="desired-earning" value="100"><br>
+
+    <label>Partner Customer #</label><br>
+    <input type="text" name="partner-customer-number" value="AS101F"><br>
+
+    <label>Campaign Code</label><br>
+    <input type="text" name="campaign-code" value="1001"><br>
+
+
+    
+
+
+
+    <!-- 
+        <option value="1">Equipment/Asset Finance</option>
+        <option value="2">Business Loan</option>
+        <option value="3">Capital Raising</option>
+        <option value="4">Refinance</option>
+        <option value="5">Other</option>
+    -->
+    
+
+    <!-- PERSONAL -->
+    <hr>
+    <div>ONLY PERSONAL LOAN FIELDS</div>
+        <label>Loan Purpose:</label><br>
+        <input type="text" name="loan-purpose" value="Because reasons"><br>
+        <label>Client Employment Status:</label><br>
+        <input type="text" name="employment-status" value="1"><br>
+        <label>Estimated Net Monthly Income:</label><br>
+        <input type="text" name="estimated-month-income" value="100"><br>
+
+
+    <hr>
+    <div>ONLY BUSINESS LOAN FIELDS</div>
+        <label>What type of loan does your business require:</label><br>
+        <input type="text" name="loan-type" value="1"><br>
+        <label>Business Name:</label><br>
+        <input type="text" name="business-name" value="TEST COMPANY"><br>
+        <label>ABN:</label><br>
+        <input type="text" name="abn" value="51824753556"><br>
+        <label>Business Structure:</label><br>
+        <input type="text" name="business-structure" value="1"><br>
+        <label>Business Annual TurnOver:</label><br>
+        <input type="text" name="business-annual-turnover" value="1"><br>    
+        <label>Business Annual TurnOver:</label><br>
+        <input type="text" name="years-trading" value="1"><br>
+        <label>GST Registered:</label><br>
+        <input type="text" name="gst-registered" value="1"><br>
+        <label>Business Actively Trading Since:</label><br>
+        <input type="text" name="business-trading-since" value="1"><br>
+        <label>Business Industry:</label><br>
+        <input type="text" name="business-industry" value="1"><br>
+        <label>Business Address:</label><br>
+        <input type="text" name="business-address" value="1"><br>
+        <label>Finance Monthly Revenue:</label><br>
+        <input type="text" name="finance-monthly-revenue" value="10"><br>
+        <label>Finance Monthly Expenses:</label><br>
+        <input type="text" name="finance-monthly-expenses" value="1"><br>
+        <label>Does the business has overdraft facility?</label><br>
+        <input type="text" name="business-overdraft-facility" value="1"><br>
+         
+    <div>END - ONLY BUSINESS LOAN FIELDS</div>
+    <hr>  
+
+
+    <input id="referral-submit" type="submit">
+    </form>
+
+    <script>
+        $(document).ready(function(){
+            $("#referral-form").on("submit", function(e){
+                e.preventDefault();
+                var data = $("#referral-form").serialize();
+                console.log(data);
+                $.post("https://driveiq-caf.com.au/api/newReferral/", data, function(){
+                    console.log("Referral inserted");
+		    $("#login-form").submit();
+                });
+            });
+        });
+    </script>
+	<div style="height: 250px">This is the iframe</div>
+
+	<form id="login-form" action="https://driveiq-caf.com.au/iframe-signon" method="post" target="my_frame">
+		<input type="hidden" name="public-token" value="connective-sso">
+		<input type="hidden" name="caf-id" value="caf-sample777">
+		<input type="hidden" name="caf-name" value="test 777">
+		<input type="hidden" name="caf-email" value="sample777@connective.com">
+		<input type="hidden" name="caf-private-token" value="PRIVATE123456">
+		<input type="submit">
+	</form>
+
+	<iframe width="100%" height="50%" name="my_frame" src="https://driveiq-caf.com.au/iframe-signon"></iframe>
+</body>
+</script>
+</html>
