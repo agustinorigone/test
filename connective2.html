@@ -233,7 +233,6 @@
             $("#referral-form").on("submit", function(e){
                 e.preventDefault();
                 var data = $("#referral-form").serialize();
-                console.log(data);
                 $.post("https://driveiq-caf.com.au/api/newReferral/", data, function(){
                     console.log("Referral inserted");
 		            $("#login-form").submit();
