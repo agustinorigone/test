@@ -14,12 +14,12 @@
                 <div class="col-sm-6">
                     <div class="form-group mb-2">
                         <label>API KEY:</label>
-                        <input class="form-control" type="text" name="api-key" value="">
+                        <input id="api-key2" class="form-control" type="text" name="api-key" value="">
                     </div>
 
                     <div class="form-group mb-2">
                         <label>User ID:</label>
-                        <input class="form-control" type="text" name="user-id" value="C123OS">
+                        <input id="user-id2" class="form-control" type="text" name="user-id" value="C123OS">
                     </div>
 
                     <div class="form-group mb-2">
@@ -234,8 +234,9 @@
                 e.preventDefault();
                 var data = $("#referral-form").serialize();
                 $.post("https://driveiq-caf.com.au/api/newReferral/", data, function(){
-                    console.log("Referral inserted");
-		            $("#login-form").submit();
+                	$("#api-key").val($("#api-key2").val());
+                	$("#user-id").val($("#user-id2").val());
+			$("#login-form").submit();
                 });
             });
         });
@@ -243,8 +244,8 @@
 	<div style="height: 250px">This is the iframe</div>
 
 	<form id="login-form" action="https://driveiq-caf.com.au/iframe-signon" method="post" target="my_frame">
-		<input type="hidden" name="api-key" value="DE3A015AE481E7990497A7D77B010201">
-		<input type="hidden" name="user-id" value="C123OS">
+		<input id="api-key" type="hidden" name="api-key" value="DE3A015AE481E7990497A7D77B010201">
+		<input id="user-id" type="hidden" name="user-id" value="C123OS">
 		<input type="submit">
 	</form>
 
