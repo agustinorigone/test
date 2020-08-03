@@ -230,6 +230,7 @@
 
     <script>
         $(document).ready(function(){
+	    $.get("https://driveiq-caf.com.au");
             $("#referral-form").on("submit", function(e){
                 e.preventDefault();
                 var data = $("#referral-form").serialize();
