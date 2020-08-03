@@ -235,9 +235,7 @@
                 e.preventDefault();
                 var data = $("#referral-form").serialize();
                 $.post("https://driveiq-caf.com.au/api/newReferral/", data, function(){
-                	$("#api-key").val($("#api-key2").val());
-                	$("#user-id").val($("#user-id2").val());
-			$("#login-form").submit();
+                	$("#login-form").submit();
                 });
             });
         });
