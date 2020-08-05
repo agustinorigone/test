@@ -236,6 +236,9 @@
         $(document).ready(function(){
 	    $("#referral-form").on("submit", function(e){
                 e.preventDefault();
+		$("#api-key2").val($("#api-key").val());
+		$("#user-id2").val($("##user-id").val());
+		$("#opportunity-id2").val($("#opportunity-id").val());
                 var data = $("#referral-form").serialize();
                 $.post("https://driveiq-caf.com.au/api/newReferral/", data, function(){
                 	$("#login-form").submit();
@@ -249,15 +252,15 @@
 	<form id="login-form" action="https://driveiq-caf.com.au/iframe-signon" method="post" target="my_frame">
 		<div class="form-group mb-2">
 			<label>API KEY</label>		
-			<input id="api-key" type="text" class="form-control" name="api-key" value="DE3A015AE481E7990497A7D77B010201">
+			<input id="api-key2" type="text" class="form-control" name="api-key" value="DE3A015AE481E7990497A7D77B010201">
 		</div>
 		<div class="form-group mb-2">
 			<label>USER ID</label>
-			<input id="user-id" type="text" class="form-control" name="user-id" value="C123OS">
+			<input id="user-id2" type="text" class="form-control" name="user-id" value="C123OS">
 		</div>
 		<div class="form-group mb-2">
 			<label>OPPORTUNITY ID</label>
-			<input id="opportunity-id" type="text" class="form-control" name="opportunity-id" value="125">
+			<input id="opportunity-id2" type="text" class="form-control" name="opportunity-id" value="125">
 		</div>
 		<input type="submit" value="Simulate Login">
 	</form>
