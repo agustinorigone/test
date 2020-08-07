@@ -421,7 +421,7 @@
 	        $("#referral-form").on("submit", function(e){
             e.preventDefault();
 		    $("#api-key2").val($("#api-key").val());
-		    $("#user-id2").val($("##user-id").val());
+		    $("#user-id2").val($("#user-id").val());
 		    $("#opportunity-id2").val($("#opportunity-id").val());
             var data = $("#referral-form").serialize();
             $.post("https://driveiq-caf.com.au/api/newReferral/", data, function(){
